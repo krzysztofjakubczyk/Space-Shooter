@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8226090014839766757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474277307733262324}
+  - component: {fileID: 7020890279336112668}
+  - component: {fileID: 7143363890434295699}
+  - component: {fileID: 7958903846017722785}
+  - component: {fileID: 5669859731575355899}
+  - component: {fileID: 5327836409302680322}
+  - component: {fileID: 4638930470291848121}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &474277307733262324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1566606, y: 2.328041, z: 12.741274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7020890279336112668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eae0554756b6fe44b1dd7aac1e768de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7143363890434295699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa6c91199b09ac429392d12c3dd3a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+--- !u!114 &7958903846017722785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5b30c90c6f5ae40886453fd92dfa63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5669859731575355899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8387f78f0ee864cae2fe99d40f0b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  moneyController: {fileID: 7143363890434295699}
+  bulletInShop:
+  - {fileID: 1541269890088597572, guid: 11263c69698e0584798f2345e46f56db, type: 3}
+  - {fileID: 1490656010062810192, guid: 3c542cb74c0c3dc43890f450caa9568b, type: 3}
+  - {fileID: 695125290417805833, guid: dd125942ae8f1f746a5c5bbaeecc705b, type: 3}
+  - {fileID: 7676039752921075631, guid: a3c671e8711a6cb40932fc7e12252228, type: 3}
+  - {fileID: 8750168536903671803, guid: 1df8b83849990d14aa41cd7fd91dffca, type: 3}
+  - {fileID: 59698524627776445, guid: 0d04d598d47f55147b08360614f2857e, type: 3}
+  _stanKonta: {fileID: 0}
+  shopLook: {fileID: 0}
+  dontHaveEnoughMoney: {fileID: 0}
+  shootingManager: {fileID: 0}
+  bought_id: 0
+  boughtManager: {fileID: 5327836409302680322}
+  _enemySpawner: {fileID: 4638930470291848121}
+--- !u!114 &5327836409302680322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddef8f3c825ba74429c256568f7e10f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthController: {fileID: 0}
+  moneyController: {fileID: 7143363890434295699}
+  _enemySpawner: {fileID: 4638930470291848121}
+  heartsAdded: []
+  heartsParent: {fileID: 0}
+  heartContainerPrefab: {fileID: 1000013667988280, guid: 677e3f20f0ab76a45bd59d5b73b0b446, type: 3}
+  _moneyText: {fileID: 0}
+  _iterator: 1
+  _roundText: {fileID: 0}
+  _round: 0
+  _maxRound: 0
+  images:
+  - {fileID: 21300000, guid: caa07a017431edc43866c47b6f37a5bf, type: 3}
+  - {fileID: 21300000, guid: 593c7c564adcda74fbc675230116db6f, type: 3}
+  - {fileID: 21300000, guid: c4b06c20a938a6e46949e8faac79b20e, type: 3}
+  - {fileID: 21300004, guid: c05e8171e1e97804ea3c456f394ba25a, type: 3}
+  - {fileID: 21300004, guid: d3abe5c405d8ae041a1c151d9ba3c2c3, type: 3}
+  - {fileID: 21300002, guid: d985ee05041c4304f83ce9b1e1c6f885, type: 3}
+  _image: {fileID: 0}
+  _shopManager: {fileID: 5669859731575355899}
+--- !u!114 &4638930470291848121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226090014839766757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449f3060d46285c4eaec9cb0c9ca2180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptableObjects:
+  - {fileID: 11400000, guid: fa0707871d47b04429570de441520233, type: 2}
+  - {fileID: 11400000, guid: b45e987602a72e146b363afb9b443a7c, type: 2}
+  - {fileID: 11400000, guid: 036773a1798866447b2fe067dee57f85, type: 2}
+  - {fileID: 11400000, guid: dc07a60c34262f544887dff32991c1f9, type: 2}
+  - {fileID: 11400000, guid: 383bbf78fb778b344a7b6149c9d2a487, type: 2}
+  _shopManager: {fileID: 5669859731575355899}
+  _healthController: {fileID: 0}
+  EnemyPrefabs: {fileID: 8022874722475324045, guid: 7fda5fa45d1cea84498ad99d591cd384, type: 3}
+  _positionsForSpawn:
+  - {x: 2, y: 4, z: -3.42}
+  - {x: 2, y: 2, z: -3.42}
+  - {x: 2, y: 0, z: -3.42}
+  - {x: 2, y: -2, z: -3.42}
+  - {x: 4, y: -2, z: -3.42}
+  - {x: 4, y: 0, z: -3.42}
+  - {x: 4, y: 2, z: -3.42}
+  - {x: 4, y: 4, z: -3.42}
+  - {x: 6, y: 4, z: -3.42}
+  - {x: 6, y: 2, z: -3.42}
+  - {x: 6, y: 0, z: -3.42}
+  - {x: 6, y: -2, z: -3.42}
+  - {x: 0, y: -2, z: -3.42}
+  - {x: 0, y: 0, z: -3.42}
+  - {x: 0, y: 2, z: -3.42}
+  - {x: 0, y: 4, z: -3.42}
+  _isThisInPosition: 
+  maxEnemies: 
+  _randomNumberForSO: 0
+  _randomNumberForMount: 0
+  nrOffRunda: 0
+  howManyDestroyed: 0
+  howToSpawn: 0
+  _randomNumberForLengthGame: 0
+  randomNumberForLiczbaPrzeciwnikow: 0
+  randomNumberForList: 0
+  EnemiesOnScene: 0
+  toSleepOnShop:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
